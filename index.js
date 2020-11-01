@@ -1,10 +1,12 @@
 // const path = require("path");
 const express = require("express");
+const cors = require("cors");
 const app = express();
 require("colors");
 
 const PORT = process.env.PORT || 5000;
 
+app.use(cors());
 // const appPath = path.join(__dirname, "client/dist");
 // app.use(express.static(appPath));
 // app.get("*", (req, res) => {
